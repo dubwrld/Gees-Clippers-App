@@ -1,0 +1,129 @@
+[
+  {
+    "id": 1693359220467,
+    "name": "Donnell",
+    "img": "../images/barbers/barber1donnell.jpg",
+    "bio": "A skilled barber with a passion for crafting precise fades and classic styles that leave clients feeling sharp and confident.",
+    "scheduleAppointment": "Tues-Sat: 8:00 AM - 8:00 PM",
+    "contact": "donnell@geesclippers.org",
+    "socialMediaLinks": [
+      "https://facebook.com",
+      "https://instagram.com",
+      "https://linkedIn.com"
+    ],
+    "buttonImg": [
+      "../images/icons/facebook-color-svgrepo-com.svg",
+      "../images/icons/instagram-1-svgrepo-com.svg",
+      "../images/icons/linkedin-svgrepo-com.svg"
+    ],
+    "barberCuts": [
+      "../images/barbers/freshcut1.jpeg",
+      "../images/barbers/freshcut2.jpeg"
+    ]
+  },
+  {
+    "id": 1693359274580,
+    "name": "Joseph",
+    "img": "../images/barbers/barber2joseph.jpeg",
+    "bio": "Master of the chair, this barber combines artistry and technique to create personalized grooming experiences that stand the test of time.",
+    "scheduleAppointment": "Tues-Sat: 6:00 AM - 6:00 PM",
+    "contact": "http://booksy.com/josephTheCutChief",
+    "socialMediaLinks": [
+      "https://instagram.com",
+      "https://linkedin.com"
+    ],
+    "buttonImg": [
+      "../images/icons/instagram-1-svgrepo-com.svg",
+      "../images/icons/linkedin-svgrepo-com.svg"
+    ],
+    "barberCuts": [
+      "../images/barbers/freshcut3.jpeg",
+      "../images/barbers/freshcut4.jpeg"
+    ]
+  },
+  {
+    "id": 1693359289779,
+    "name": "Lincoln",
+    "img": "../images/barbers/barber3lincoln.jpg",
+    "bio": "A modern barber blending contemporary trends with traditional expertise, dedicated to delivering fresh looks and clean cuts.",
+    "scheduleAppointment": "Wed: 1:00 PM - 8:00 PM <br> Tues-Sat: 8:00 AM - 8:00 PM",
+    "contact": "lincoln@geesclippers.org",
+    "socialMediaLinks": [
+      "https://facebook.com"
+    ],
+    "buttonImg": [
+      "../images/icons/facebook-color-svgrepo-com.svg"
+    ],
+    "barberCuts": [
+      "../images/barbers/freshcut5.jpeg",
+      "../images/barbers/freshcut6.jpeg"
+    ]
+  },
+  {
+    "id": 1693359325280,
+    "name": "James",
+    "img": "../images/barbers/barber4james.jpg",
+    "bio": "Precision-focused barber specializing in intricate designs and meticulous grooming, transforming hair into a canvas of self-expression.",
+    "scheduleAppointment": "Tues-Sat: 8:00 AM - 8:00 PM",
+    "contact": "1(414) 444-5555 <br> or <br> booksy.com/JamesHairGuru",
+    "socialMediaLinks": [
+      "https://linkedin.com"
+    ],
+    "buttonImg": [
+      "../images/icons/linkedin-svgrepo-com.svg"
+    ],
+    "barberCuts": [
+      "../images/barbers/freshcut7.jpeg",
+      "../images/barbers/freshcut8.jpeg"
+    ]
+  },
+  {
+    "id": 1693359347524,
+    "name": "Jason",
+    "img": "../images/barbers/barber5jason.jpg",
+    "bio": "A charismatic barber who not only sculpts top-tier cuts but also cultivates a welcoming atmosphere where clients feel like part of the family.",
+    "scheduleAppointment": "Tues-Fri: 8:00 AM - 8:00 PM <br> Sat: 6:00 AM - 6:00 PM ",
+    "contact": "jason@geesclippers.org",
+    "socialMediaLinks": [
+      "instagram.com"
+    ],
+    "buttonImg": [
+      "../images/icons/instagram-1-svgrepo-com.svg"
+    ],
+    "barberCuts": [
+      "../images/barbers/freshcut4.jpeg",
+      "../images/barbers/freshcut6.jpeg"
+    ]
+  },
+  {
+    "id": 1693359363262,
+    "name": "Gaulien Smith",
+    "img": "../images/uploads/1693581166895.jpg",
+    "bio": "Classic meets contemporary as this barber expertly wields clippers and scissors to provide tailored haircuts that suit both individuality and lifestyle.",
+    "scheduleAppointment": "Tues-Sat, 8:00 AM - 8:00 PM",
+    "contact": "gee@geesclippers.org",
+    "socialMediaLinks": [
+      "https://instagram.com/geesclippers/",
+      "https://facebook.com/geesclippersbarberandbeautysalon"
+    ],
+    "buttonImg": [
+      "../images/icons/instagram-svgrepo-com.svg",
+      "../images/icons/facebook-color-svgrepo-com.svg"
+    ],
+    "barberCuts": [
+      "../images/barbers/freshcut8.jpeg",
+      "../images/barbers/freshcut1.jpeg"
+    ]
+  },
+  {
+    "id": 1693792277289,
+    "name": "LuckyDaBarber",
+    "img": "../images/barbers/default_img.png",
+    "bio": "",
+    "scheduleAppointment": "",
+    "contact": "",
+    "socialMediaLinks": [],
+    "buttonImg": [],
+    "barberCuts": []
+  }
+]

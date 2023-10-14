@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color: #0077C0;
+    --secondary-color: #EEE1C6;
+    --powder-blue-glow: rgb(60, 180, 255);
+    --powder-blue-nonGlow: rgb(0, 119, 192);
+    --alt-color: rgb(0, 71, 27);
+    --glass-color: rgba(255, 255, 255, 0.7);
+    --font-sizeEventTitle: 30px;
+    --font-sizeL: 44px;
+    --font-sizeM: 24px;
+    --font-sizeS: 18px;
+    --font-color: black;
+    --font-color-alt: rgba(0, 0, 0, 0.7);
+
+    --my-start-height: 0px;
+    --my-end-height: 0px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* #navContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+
+} */
+
+
+#index-main-content-events-calendar-header {
+    font-size: var(--font-sizeL);
+    color: var(--font-color);
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+#index-main-content-events-calendar-callToAction {
+    font-size: var(--font-sizeM);
+    font-weight: bold;
+    color: var(--font-color-alt);
+    margin-bottom: 15px;
+}
+
+body section:nth-child(odd) {
+    /* background-color: var(--main-color); */
+    background-color: #b0e0e6;
+}
+
+body section:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.slideShowBTN {
+    cursor: pointer;
+    transform: scale(2);
+    margin: 0px 10px;
+}
+
+.slideShowBTN:hover {
+    transform: scale(2.3);
+    color: var(--powder-blue-glow);
+}
+
+#index-main-content-events-listing-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#index-main-content-container {
+    padding: 0;
+    margin: 0;
+
+}
+
+.downArrow {
+    font-family: monospace;
+}
+
+#index-main-content-gees-video {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#index-main-about-gees-clippers-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    height: max-content;
+    box-sizing: content-box;
+    flex-direction: column;
+    border: 20px groove black;
+    min-height: 600px;
+
+}
+
+#seeMoreBtn {
+    background: rgb(238, 225, 198);
+    font-size: var(--font-sizeM);
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin: 5px 0;
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    display: none;
+}
+
+#seeMoreBtn:hover {
+    background: rgb(252, 223, 164);
+    animation: seeMmoreBtn 1s ease-in-out;
+}
+
+@keyframes seeMoreBtn {
+    from {
+        background: rgb(238, 225, 198);
+    }
+
+    to {
+        background: rgb(252, 223, 164);
+    }
+}
+
+#index-main-about-gees-clippers-history-of-gees-clippers {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: 10px;
+    width: 75%;
+    border-radius: 10px;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: hidden;
+}
+
+#index-main-about-gees-clippers-history-of-gees-clippers p {
+    padding: 10px 0;
+}
+
+@keyframes expandHistorySection {
+    from {
+        height: var(--my-start-height);
+    }
+
+    to {
+        height: var(--my-end-height);
+    }
+}
+
+@keyframes contractHistorySection {
+    from {
+        height: var(--my-end-height);
+    }
+
+    to {
+        height: var(--my-start-height);
+    }
+}
+
+#index-geeIMG {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 125px;
+}
+
+
+#index-main-content-events-calendar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    padding: 20px 0px;
+    flex-direction: column;
+}
+
+#calendar {
+    width: 45vw;
+    height: 64vh;
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+
+#index-main-content-events-listing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+#index-main-content-events-listing-inner-container {
+    width: 80%;
+}
+
+.title {
+    /* padding: 8px; */
+    margin: 10px;
+    font-size: 50px;
+    color: var(--font-color);
+}
+
+#index-main-content-events-listing-title {
+    padding: 10px;
+    font-size: var(--font-sizeEventTitle);
+    color: var(--font-color-alt);
+}
+
+#index-main-content-events-listing-image {
+    flex-grow: 2;
+    border-radius: 5px;
+    margin: 1%;
+    aspect-ratio: 2/1;
+    width: 50%;
+    box-shadow: 3px 3px 15px #EEE1C6;
+}
+
+#index-main-content-events-listing-description {
+    width: 70%;
+    padding: 1%;
+    /* min-height: 10vh; */
+    font-size: var(--font-sizeM);
+    background: linear-gradient(to bottom, var(--secondary-color), rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    color: var(--font-color);
+    margin-bottom: 10px;
+}
+
+#index-create-events-listing-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+#new-event-form {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+@keyframes slidein {
+    from {
+        transform: translateX(-300%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+
+
+@keyframes backgroundGrow {
+    from {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    to {
+        padding: 10px;
+        box-shadow: 2px 2px 20px rgb(200, 200, 200);
+    }
+}
+
+.calendarEvent {
+    background-color: white;
+}
+
+.calendarEvent:hover {
+    background-color: yellow;
+}
+
+/* styles.css */
+.ticker-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: var(--powder-blue-nonGlow);
+    color: white;
+    font-size: var(--font-sizeS);
+    padding: 5px;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.ticker {
+    list-style-type: none;
+    white-space: nowrap;
+    animation: ticker-scroll 60s linear infinite;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+#index-main-content-events-signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    flex-direction: column;
+}
+
+#email-form {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    height: 330px;
+    margin-top: 40px;
+    margin-bottom: 130px;
+    box-sizing: content-box;
+}
+
+#email-header-label,
+#email-body-label,
+#email-client-email-label {
+    font-size: var(--font-sizeS);
+    color: var(--font-color-alt);
+    display: flex;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+#contact-gee-title {
+    color: black;
+}
+
+.email {
+    width: 100%;
+    border: none;
+    outline: none;
+    caret-color: black;
+    background-color: white;
+}
+
+
+#email-body {
+    resize: none;
+    width: 100%;
+    height: 140px;
+    outline: none;
+    border: none;
+    caret-color: black;
+    caret-shape: block;
+    font-size: var(--font-sizeS);
+    background-color: white;
+}
+
+#email-submit-btn {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 8px;
+    min-width: 70px;
+    width: 20%;
+    font-size: var(--font-sizeS);
+    background-color: rgb(0, 119, 192);
+    cursor: pointer;
+}
+
+#email-submit-btn:hover {
+    background-color: rgb(60, 180, 255);
+    box-shadow: 2px 3px 5px black;
+    animation: emailButton 1s linear;
+}
+
+@keyframes emailButton {
+    from {
+        background-color: rgb(0, 119, 192);
+    }
+
+    to {
+        background-color: rgb(60, 180, 255)
+    }
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-600%);
+    }
+}
+
+
+
+/* Anything smaller than a laptop */
+@media (max-width: 1250px) {
+    #email-form {
+        width: 80%;
+    }
+
+    #index-main-content-gees-video {
+        height: max-content;
+        padding: 20px 0;
+    }
+
+    #index-main-content-events-calendar-container {
+        height: unset;
+    }
+
+    #index-main-content-events-listing-container {
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    #index-main-content-events-listing-image {
+        width: 100%;
+    }
+
+    #index-main-content-events-listing-description {
+        min-height: 10vh;
+        padding: 10px;
+        margin-top: 15px;
+        margin-block: 20px;
+        width: 100%;
+    }
+
+    /* #footer-section-gees-contact {
+        transform: translateX(50%);
+    } */
+
+    #calendar {
+        width: 85vw;
+        color: var(--alt-color);
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+        /* padding: 10px; */
+    }
+
+}
+
+/* tablets specific and under*/
+@media (max-width:900px) {
+    .title {
+        font-size: var(--font-sizeL);
+        padding: 8px;
+        margin-top: 20px;
+    }
+
+    #index-main-about-gees-clippers-history-of-gees-clippers p {
+        line-height: 1.25;
+    }
+
+    #index-main-content-events-calendar-callToAction {
+        font-size: var(--font-sizeS);
+    }
+}
+
+/* small screens */
+@media (max-width:500px) {}

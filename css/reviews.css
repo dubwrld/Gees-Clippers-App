@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --main-color: rgb(0, 119, 192);
+    --secondary-color: #EEE1C6;
+    --alt-color: rgb(0, 71, 27);
+    --glass-color: rgba(255, 255, 255, 0.7);
+    --button-color-1: rgb(230, 40, 40);
+    --button-color-1-hover: rgb(255, 13, 0);
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#reviews-main-content-section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#reviews-main-content-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#reviews-main-content-title {
+    font-weight: 800;
+    font-size: 48px;
+    font-style: oblique;
+}
+
+#reviews-main-content-create-a-review-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+#reviews-main-content-horizontal-line {
+    width: 30%;
+}
+
+#reviews-main-content-writeAReview-star-icon {
+    height: 24px;
+    aspect-ratio: 1/1;
+    filter: invert(1);
+}
+
+#reviews-main-content-writeAReview-button {
+    background-color: var(--button-color-1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer;
+    color: white;
+}
+
+#reviews-main-content-head-image {
+    width: 100%;
+    /* height: 340px; */
+    margin-bottom: 16px;
+}
+
+#reviews-main-content-writeAReview-button:hover {
+    background-color: var(--button-color-1-hover);
+    animation: buttonAnimation 1s ease-in-out;
+    color: white;
+    border-color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+#reviews-main-content-writeAReview-button:focus {
+    background-color: var(--button-color-1-hover);
+    animation: buttonAnimation 1s ease-in-out;
+    color: white;
+    border-color: white;
+    box-shadow: 2px 2px 5px black;
+}
+
+#reviews-main-content-section {
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+#reviews-main-content-writeAReview-star-icon {
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+
+#reviews-main-content-list-of-reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.review_text {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+#reviewTags_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.review-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(50, 50, 50, 0.3));
+    box-shadow: 6px 6px 5px black;
+}
+
+.reviewCard {
+    width: 450px;
+    height: 210px;
+    overflow: hidden;
+    padding: 24px;
+    font-size: 20px;
+    background: linear-gradient(45deg, rgba(200, 200, 200, 0.7), rgba(200, 280, 200, 0.8));
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px gray;
+    margin-top: 12px;
+}
+
+.reviewRating {
+    height: 20px;
+    aspect-ratio: 1/1;
+    filter: invert(1) brightness(80%) sepia(100%) saturate(365%);
+}
+
+.reviewRatingNotChosen {
+    height: 20px;
+    aspect-ratio: 1/1;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    border-radius: 10px;
+
+    background-color: var(--secondary-color);
+
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    position: relative;
+    z-index: 10;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#reviewForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 16px;
+}
+
+#reviewDescriptionInput {
+    resize: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+.reviewRatingsContainer {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.reviewRatingBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes buttonAnimation {
+    from {
+        opacity: 90;
+        background-color: var(--button-color-1);
+    }
+
+    to {
+        opacity: 100;
+        background-color: var(--button-color-1-hover);
+
+    }
+}
+
+@media (max-width:500px) {
+    .reviewCard {
+        width: 80%;
+    }
+}

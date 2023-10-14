@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+#medicalWellness {
+  width: 100%;
+  height: 95vh;
+  align-self: center;
+  display: inline-block;
+}
+
+:root {
+  --main-color: #0077c0;
+  --secondary-color: #eee1c6;
+  --alt-color: rgb(0, 71, 27);
+  --glass-color: rgba(255, 255, 255, 0.7);
+}
+
+#adminPanelBody {
+  background-color: var(--main-color);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+/* #navContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: max-content;
+
+} */
+
+#index-main-content-events-calendar-header {
+  font-size: xx-large;
+}
+
+#index-main-content-events-calendar-callToAction {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+body section:nth-child(odd) {
+  background-color: var(--main-color);
+}
+
+body section:nth-child(even) {
+  background-color: var(--secondary-color);
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-300%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: (-300%);
+  }
+
+  to {
+    transform: (0%);
+  }
+}
+
+@keyframes backgroundGrow {
+  from {
+    padding: 0;
+    box-shadow: none;
+  }
+
+  to {
+    padding: 10px;
+    box-shadow: 2px 2px 20px rgb(200, 200, 200);
+  }
+}
+
+/* Anything smaller than a laptop */
+@media (max-width: 1250px) {
+  /* #footer-section-gees-contact {
+      transform: translateX(50%);
+  } */
+}
+
+.services {
+  padding: 15px;
+  border-radius: 6%;
+  background-color: rgb(0, 119, 192);
+  font-weight: 500;
+  font-size: var(--font-sizeM);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-style: groove;
+  border-width: 4px;
+  color: white;
+  justify-content: center;
+  border-color: black;
+  gap: 10px;
+}
+
+#servicesTitle {
+  font-size: var(--font-sizeL);
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+}
+
+/* Basic styling for the dropdown */
+.dropdown {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  animation: bounce 2s ease-in-out;
+}
+
+/* Styling for the dropdown trigger */
+.dropdown-trigger {
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-width: 8px;
+  border-style: ridge;
+  background-color: #fff;
+  font-weight: 500;
+  padding: 27px 41px;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+}
+
+/* Styling for the dropdown content */
+.dropdown-content {
+  display: none;
+  padding: 40px 50px;
+  font-size: 25px;
+  font-family: "FontAwesome";
+  font-style: oblique;
+  font-weight: bolder;
+  color: black;
+  background-color: #eee1c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+/* Show the dropdown content when the trigger is clicked */
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+/* Style for individual dropdown items */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style for individual dropdown items on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.hospital {
+  /* display: flex; */
+  text-align: center;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* background-color: rgb(0, 119, 192); */
+  color: white;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-family: fangsong;
+  font-size: xx-large;
+  position: relative;
+  padding: 5px;
+  /* animation: floatAnimation 3s ease-in-out infinite; */
+  /* display: flex; */
+  text-align: center;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* background-color: rgb(0, 119, 192); */
+  color: white;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-family: fangsong;
+  font-size: xx-large;
+  position: relative;
+  padding: 5px;
+
+  /* animation: floatAnimation 3s ease-in-out infinite; */
+}
+
+.hospital:first {
+  margin-top: 10px;
+}
+
+#hospitalSouth {
+  background-color: rgb(0, 119, 192);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bloodP {
+  border-radius: 50%;
+}
+
+#monitor {
+  width: 25%;
+  animation: bounce 2s infinite;
+  border-radius: 25%;
+}
+
+#water-drinking {
+  width: 50%;
+  border-radius: 50%;
+}
+
+#specialServ {
+  width: 40%;
+  border-radius: 30%;
+  border-style: solid;
+  margin: 10px 0;
+}
+
+#hospitalPic {
+  width: 50%;
+  aspect-ratio: 2/1;
+  border-radius: 23%;
+  margin-top: 25px;
+}
+
+#plate {
+  width: 50%;
+  border-radius: 15%;
+}
+
+#doctorCart {
+  width: 50%;
+  background-color: transparent;
+}
+
+.helpServ {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-sizeL);
+  margin: 15px 0;
+  padding: 15px 20px;
+  gap: 5px;
+}
+
+.helpServ li {
+  animation: appear 1s ease-in forwards;
+  opacity: 0;
+}
+
+.helpServ li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.helpServ li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.helpServ li:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.helpServ li:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.helpServ li:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.helpServ li:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+#aboutUsP {
+  margin-top: 10px;
+}
+
+
+
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatAnimation {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+/* tablets specific and under*/
+@media (max-width: 1000px) {
+  #medicalWellness {
+    height: unset;
+  }
+
+  .helpServ {
+    font-size: var(--font-sizeM);
+    margin: 0;
+  }
+
+}
+
+/* small screens */
+@media (max-width: 500px) {
+  #bloodP {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    height: 250px;
+  }
+}
+
+@media (max-width:400px) {
+  .medical-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:600px) {
+  #specialServ {
+    width: 70%;
+  }
+
+  .dropdown-content {
+    box-sizing: content-box;
+    padding: 40px 0;
+    width: 90%;
+  }
+}

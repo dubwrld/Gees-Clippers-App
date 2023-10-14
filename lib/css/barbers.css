@@ -1,0 +1,370 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* * means everything on page */
+
+:root {
+  --main-color: #0077C0;
+  --secondary-color: #EEE1C6;
+  --powder-blue-glow: rgb(60, 180, 255);
+  --powder-blue-nonGlow: rgb(0, 119, 192);
+  --alt-color: rgb(0, 71, 27);
+  --glass-color: rgba(255, 255, 255, 0.7);
+  --font-sizeL: 44px;
+  --font-sizeM: 24px;
+  --font-sizeS: 18px;
+  --font-color: black;
+  --font-color-alt: rgba(0, 0, 0, 0.7);
+
+  --my-start-height: 0px;
+  --my-end-height: 0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #eee1c6;
+}
+
+#barbers-main-content-bookAnAppointment-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-sizeL);
+  color: var(--font-color);
+}
+
+#barbers-main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+#barbers-main-content-inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 25px 0;
+}
+
+.barbersCardElement {
+  /* Style for the card container */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 9px 4px rgba(0, 0, 0, 1);
+  padding: 20px;
+  background-color: #fff;
+  /* margin: 10px; */
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: var(--font-color);
+  height: 570px;
+  width: 45%;
+  border: 2px solid black;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.barbersCardElement:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the card content */
+.cardElementName {
+  font-size: var(--font-sizeM);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardElementBio {
+  font-size: var(--font-sizeS);
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Style for the card image */
+.cardElementImg {
+  height: 40%;
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* styles for elements in card */
+.cardElementScheduleAppointment {
+  font-size: var(--font-sizeM);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardElementContactInfo {
+  font-size: var(--font-sizeM);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardElementSocialMediaLinks {
+  font-size: var(--font-sizeM);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.socialMediaButton a img:hover {
+  background-color: rgba(0, 119, 192, 0.1);
+  border-radius: 50%;
+  border: rgb(0, 0, 0) 2px solid;
+  aspect-ratio: 1/1;
+  padding: 10px;
+  box-sizing: content-box;
+  box-shadow: 3px 5px 8px black;
+  object-position: center;
+  object-fit: contain;
+}
+
+/* social media button links */
+.buttonImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.socialMediaButton {
+  display: flex;
+  gap: 30px;
+}
+
+.socialMediaBtnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(254, 254, 254, 0.8);
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#myModal {
+  z-index: 3;
+}
+
+/* barber cuts images */
+.barberCuts {
+  max-height: 250px;
+  max-width: 250px;
+  aspect-ratio: 1/1;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#barbers-main-content-header {
+  font-size: var(--font-sizeL);
+  color: var(--main-color);
+  margin: 15px;
+}
+
+#barberRosterTitle {
+  font-size: var(--font-sizeM);
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+#actionStatementTitle {
+  font-size: var(--font-sizeM);
+  color: var(--font-color-alt);
+  margin-bottom: 5px;
+}
+
+.barbersInfoExpanded {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#barberInfoContainer {
+  width: 80%;
+  font-size: var(--font-sizeM);
+  color: var(--font-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cardElementImgExpanded {
+  border-radius: 50%;
+  border: 5px solid black;
+  aspect-ratio: 1/1;
+  width: 60%;
+}
+
+.cardElementNameExpanded {
+  font-size: var(--font-sizeL);
+}
+
+.cardElementBioExpanded,
+.cardElementScheduleAppointmentExpanded,
+.cardElementContactInfoExpanded {
+  font-size: var(--font-sizeM);
+}
+
+.barberHairCutsImgs {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#barberHaircutsTitle {
+  font-size: var(--font-sizeM);
+}
+
+
+
+@keyframes slidein {
+  from {
+    transform: translateX(-300%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes backgroundGrow {
+  from {
+    padding: 0;
+    box-shadow: none;
+  }
+
+  to {
+    padding: 10px;
+    box-shadow: 2px 2px 20px rgb(200, 200, 200);
+  }
+}
+
+
+
+@media (max-width: 1250px) {
+  #barbers-main-content-bookAnAppointment-section {
+    font-size: var(--font-sizeM);
+  }
+
+  .cardElementBio,
+  .cardElementScheduleAppointment,
+  .cardElementContactInfo,
+  .cardElementSocialMediaLinks {
+    font-size: var(--font-sizeS);
+  }
+}
+
+@media (max-width:900px) {
+  .barberHairCutsImgs {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .cardElementContactInfo {
+    font-size: var(--font-sizeS);
+    word-wrap: break-word;
+  }
+
+  .barbersCardElement {
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  #actionStatementTitle {
+    padding: 10px;
+  }
+
+  .cardElementBioExpanded,
+  .cardElementScheduleAppointmentExpanded,
+  .cardElementContactInfoExpanded {
+    font-size: var(--font-sizeS);
+  }
+
+  .cardElementNameExpanded {
+    font-size: var(--font-sizeM);
+  }
+
+  .cardElementImgExpanded {
+    width: 90%;
+  }
+
+}

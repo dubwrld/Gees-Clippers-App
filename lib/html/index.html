@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gees Clippers</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/navigationMenu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./dist/bundle.js" type="module"></script>
+</head>
+
+<body>
+    <!-- nav menu -->
+    <section id="nav-menu-section">
+        <div id="navContainer" class="grid-container">
+            <img id="index-nav-menu-home-btn" class="navBTN" src="../images/icons/GeesClippersLogo.png"
+                alt="Home Button" tabindex="1" />
+
+            <div id="nav-menu-section-inner-container">
+                <div id="loggedInACC"></div>
+                <a href="/barbers" id="nav-aboutUs-btn" class="navBTN" tabindex="1">Barbers</a>
+                <a href="/partners" id="nav-community-btn" tabindex="1" class="navBTN">Community</a>
+                <a href="#footer-section" id="nav-contactUs-btn" tabindex="1" class="navBTN">Contact Us</a>
+                <a href="/reviews" id="nav-fans-btn" class="navBTN" tabindex="1">Fans</a>
+                <a href="/medical-clinic" id="nav-medicalClinic-btn" tabindex="1" class="navBTN">Medical Clinic</a>
+                <a href="/services" id="nav-services-btn" class="navBTN" tabindex="1">Services</a>
+
+
+                <form action="" method="get" id="nav-menu-userLogin-form">
+                    <label for="nav-menu-username">Username:</label>
+                    <input id="nav-menu-username" type="text" />
+                    <label for="nav-menu-password">Password:</label>
+                    <input id="nav-menu-password" type="password" />
+                    <button type="submit" id="nav-menu-login-btn">Login</button>
+                    <button type="button" id="nav-menu-signup-btn">Sign up</button>
+                </form>
+
+            </div>
+
+            <div class="mobile-menu-button">
+                <a href="javascript:void(0);" class="icon" id="nav-section-mobile-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="index-main-content-section">
+        <div id="index-main-content-container">
+            <!-- Gees video -->
+            <section>
+                <video id="index-main-content-gees-video" controls muted preload autoplay loop>
+                    <source src="../images/videos/FullSizeRender.MP4" type="video/mp4">
+                    Your Browser does not support video tag.
+                </video>
+            </section>
+
+            <section></section>
+            <section id="index-main-about-gees-clippers-section">
+                <img id="index-geeIMG" src="../images/uploads/gee-jasmine.jpg" alt="Gee photo">
+                <h1 class="title">About Us</h1>
+                <div id="index-main-about-gees-clippers-history-of-gees-clippers">
+                    <p id="index-main-about-gees-clippers-history-p1">
+                        Gee's Clippers opened its doors for the
+                        first time 25 years ago with three barbers on W. Fond du Lac
+                        Ave. and N. Sherman
+                        Blvd. The operation, now located on historic Dr. Martin Luther King Jr. Drive in Milwaukee, has
+                        grown into one of the
+                        most significant black-owned barbershops in the Midwest with 8,000 square feet, 30 barbers, and
+                        a
+                        stylist.
+                    </p>
+                    <p id="index-main-about-gees-clippers-history-p2">
+                        We invite you to come and see firsthand what makes Gee's different. Whether you are a kid from
+                        the
+                        53206 zip code, an
+                        executive at the Rockwell Automation, or a traveled NBA player, our talented team knows exactly
+                        what
+                        you need.
+                    </p>
+                </div>
+                <div id='seeMoreBtn'>See more <span class='downArrow'>V</span></div>
+            </section>
+
+            <!-- Events Calendar -->
+            <section>
+                <div id="index-main-content-events-calendar-container">
+                    <div class="glass">
+                        <h1 id="index-main-content-events-calendar-header">Events</h1>
+                        <h3 id="index-main-content-events-calendar-callToAction">Secure your spot at our upcoming event.
+                            Be part of something exceptional!</h3>
+
+                        <div id='calendar'></div>
+                        <h2 class="title">Highlights</h2>
+                        <h2 id="index-main-content-events-listing-title">View Current Events:</h2>
+                        <div id="index-main-content-events-listing-inner-container">
+                            <a class="prev slideShowBTN" id="index-main-content-events-listing-inner-prev">&#10094;</a>
+                            <img id="index-main-content-events-listing-image" src="../images/uploads/gee-partners.jpg"
+                                alt="Image of Gees clippers" />
+                            <a class="next slideShowBTN" id="index-main-content-events-listing-inner-next">&#10095;</a>
+                        </div>
+
+                        <div id="index-main-content-events-listing-description">
+                            <p>See current events.</p>
+                        </div>
+
+                        <div class="ticker-container">
+                            <ul class="ticker">
+                                <!-- Ticker items will be added dynamically using JavaScript -->
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Events listinig section -->
+            <section>
+                <div id="index-main-content-events-signup-container">
+                    <h2 class="title" id="contact-gee-title">Contact Gee</h2>
+                    <form action="" method="post" id="email-form">
+                        <label for="email-header" id="email-header-label">Subject: <input class="email"
+                                id="email-header" type="text" name="email-header"></label>
+                        <hr>
+                        <label for="email-client-email" id="email-client-email-label">Email✉: <input class="email"
+                                id="email-client-email" type="text" name="email-client-email"></label>
+                        <hr>
+                        <label for="email-body" id="email-body-label"><textarea id="email-body" type="text"
+                                name="email-body"></textarea></label>
+
+                        <button id="email-submit-btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </section>
+    <section></section>
+
+    <!-- Footer content -->
+    <section id="footer-section">
+        <div id="footerContainer">
+            <div class="footer-btn" id="footer-hours-btn">Hours</div>
+            <div class="footer-btn" id="footer-careers-btn">Careers</div>
+            <div class="footer-btn" id="footer-contact-btn">Contact</div>
+        </div>
+
+        <div class="footer-section-popup-menu">
+
+            <ul id="footer-section-shop-hours" class="special-glass">
+                <li>Sunday - Monday: Closed</li>
+                <li>Tuesday - Friday: 8:00 AM - 6:00 PM</li>
+                <li>Saturday: 6:00 AM - 4:00 PM</li>
+            </ul>
+
+            <ul id="footer-section-gees-contact" class="special-glass">
+                <li>2200 N Dr. Martin Luther King Jr. Drive</li>
+                <li>Miwaukee, WI</li>
+                <li><a id="footer-section-gees-contact-email-link"
+                        href="mailto:gauliensmith@yahoo.com">gauliensmith@yahoo.com</a></li>
+                <li>414-763-8832</li>
+                <div id="footer-section-gees-contact-links-container">
+                    <img id="footer-section-gees-contact-linkedin" class="svgBtn"
+                        src="../images/icons/linkedin-svgrepo-com.svg" alt="Linkedin link">
+                    <img id="footer-section-gees-contact-facebook" class="svgBtn"
+                        src="../images/icons/facebook-color-svgrepo-com.svg" alt="Facebook link">
+                    <img id="footer-section-gees-contact-instagram" class="svgBtn"
+                        src="../images/icons/instagram-svgrepo-com.svg" alt="Instagram link">
+                </div>
+            </ul>
+        </div>
+    </section>
+    <script type="module" src="../app/NavigationMenu.js"></script>
+    <script type="module" src="../app/Footer.js"></script>
+    <script type="module" src="../app/Index.js"></script>
+
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit&rm=explicit&hl=en&xjs=ITLs-sw"></script>
+</body>
+
+</html>
+<!-- npm i then npm run build to start server -->

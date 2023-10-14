@@ -1,0 +1,151 @@
+[
+  {
+    "date": "2023/08/21",
+    "rating": 4,
+    "tags": [
+      "medical-clinic",
+      "service",
+      "time",
+      "staff"
+    ],
+    "name": "John A.",
+    "testimony": "“Great services, I was in and out in no time at all!”",
+    "id": 100001
+  },
+  {
+    "date": "2023/07/23",
+    "rating": 2,
+    "tags": [
+      "barbers",
+      "service",
+      "time",
+      "staff"
+    ],
+    "name": "Demetrius J.",
+    "testimony": "“They canceled my appointment.”",
+    "id": 100002
+  },
+  {
+    "date": "2023/05/24",
+    "rating": 5,
+    "tags": [
+      "medical-clinic",
+      "service",
+      "time",
+      "staff"
+    ],
+    "name": "Kiara J",
+    "testimony": "“I got a health screening at the clinic and it was really professional, they treated me with kindness, respect, and it didn't take long at all.”",
+    "id": 100003
+  },
+  {
+    "date": "2023/08/22",
+    "rating": 5,
+    "tags": [
+      "barbers",
+      "real-men-real-talk",
+      "medical-clinic",
+      "service",
+      "event",
+      "staff",
+      "time"
+    ],
+    "name": "Mary Kay",
+    "testimony": "“I can't say enough good things or recommend Al at Gee's Clipper Barbershop enough. My oldest kiddo has sensory issues & the biggest one is around his head. Getting his hair cut ever since he's been 1 has always been a battle. Al was so patient with my big boy - he was calm and just talking to him & his persistence was magic. Grateful and both my boys look so handsome.”",
+    "id": 1692720484109
+  },
+  {
+    "date": "2023/08/22",
+    "rating": 4,
+    "tags": [
+      "barbers",
+      "medical-clinic",
+      "service",
+      "staff"
+    ],
+    "name": "Steve W",
+    "testimony": "“The entire shop and group of people are good. They make you feel welcomed when you enter and thank you once you leave. Of course they do a great job and are priced accordingly.”",
+    "id": 1692720604471
+  },
+  {
+    "date": "2023/08/22",
+    "rating": 4,
+    "tags": [
+      "real-men-real-talk",
+      "event",
+      "time",
+      "staff"
+    ],
+    "name": "Anonymous",
+    "testimony": "“I gained valuable coping techniques during my participation in Real Men Real Talk. These strategies have proven instrumental in managing my stress and anxiety related to relocating to a new city as an African American male.”",
+    "id": 1692721355224
+  },
+  {
+    "date": "2023/08/22",
+    "rating": 1,
+    "tags": [
+      "barbers",
+      "service",
+      "staff",
+      "time"
+    ],
+    "name": "Anonymous",
+    "testimony": "“Barber showed up late to my appointment and then cut someone before me.”",
+    "id": 1692721410296
+  },
+  {
+    "date": "2023/08/22",
+    "rating": 4,
+    "tags": [
+      "service",
+      "event"
+    ],
+    "name": "Michael",
+    "testimony": "“My son got to meet some brewers players today and he got to get a signed baseball! I love Gee's Clippers.”",
+    "id": 1692727494509
+  },
+  {
+    "date": "2023/08/22",
+    "rating": 4,
+    "tags": [
+      "event",
+      "time"
+    ],
+    "name": "Lucy",
+    "testimony": "“I'm tuning in every week to hear Gee's podacast.”",
+    "id": 1692745868093
+  },
+  {
+    "date": "2023/08/22",
+    "rating": 3,
+    "tags": [
+      "service",
+      "event"
+    ],
+    "name": "Lucas",
+    "testimony": "“I met some politicians at the shop today & was able to discuss things effecting the community.”",
+    "id": 1692746060154
+  },
+  {
+    "date": "2023/08/26",
+    "rating": 5,
+    "testimony": "“Loved hearing about other's stories at Real Men Real Talk and the food was great.”",
+    "name": "Derrick",
+    "tags": [
+      "real-men-real-talk",
+      "service",
+      "event"
+    ],
+    "id": 1693097877405
+  },
+  {
+    "date": "2023/09/01",
+    "rating": 4,
+    "testimony": "“I loved going to real men real talk”",
+    "name": "Derrick",
+    "tags": [
+      "medical-clinic"
+    ],
+    "id": 1693579198024
+  }
+]

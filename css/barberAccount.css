@@ -1,0 +1,218 @@
+#barber_Info_Container {
+    height: max-content;
+    background: black;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barberIMG_Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#barberIMG {
+    aspect-ratio: 1/1;
+    height: 250px;
+    border-radius: 50%;
+    /* padding: 0px; */
+    margin: 25px 0;
+}
+
+#settings-button {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#closeSettings {
+    color: white;
+    cursor: pointer;
+}
+
+#closeSettings:hover {
+    color: red;
+}
+
+#form_profileImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#update-profile-img-container {
+    color: white;
+    font-size: var(--font-sizeM);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    display: none;
+    box-sizing: content-box;
+    margin-bottom: 10px;
+}
+
+#closeSettingsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#logout,
+#edit_profile,
+#update-profile-img-container form button {
+
+    color: white;
+    font-size: var(--font-size-s);
+    border: 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 5px;
+}
+
+
+#logout:hover,
+#edit_profile:hover,
+#update-profile-img-container form button:hover {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#socialMediaLinksContainer,
+#barberCutsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 25px;
+}
+
+#socialMediaLinksContainer img,
+#barberCutsContainer img {
+    aspect-ratio: 1/1;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+.barber_text {
+    color: white;
+    font-size: var(--font-sizeM);
+    margin: 10px;
+}
+
+#settings-button {
+    filter: invert(1);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 5;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-barberAccount-content {
+    z-index: 3;
+}
+
+#linkTypeContainer {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+#barberUpdate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: max-content;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px;
+    border-radius: 50px;
+
+}
+
+@media (max-width:600px) {
+    #update-profile-img-container {
+        width: 65%;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

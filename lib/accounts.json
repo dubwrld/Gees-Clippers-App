@@ -1,0 +1,23 @@
+[
+  {
+    "login": "admin",
+    "password": "123",
+    "accountType": "admin",
+    "id": 1,
+    "loggedIN": false
+  },
+  {
+    "login": "gee",
+    "password": "123",
+    "accountType": "barber",
+    "id": 1693359363262,
+    "loggedIN": false
+  },
+  {
+    "id": 1693792277289,
+    "login": "Lucky123",
+    "password": "123",
+    "accountType": "barber",
+    "loggedIn": false
+  }
+]

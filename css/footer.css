@@ -1,0 +1,135 @@
+:root {
+    --main-color: #0077C0;
+    --secondary-color: #EEE1C6;
+    --alt-color: rgb(0, 71, 27);
+    --glass-color: rgba(255, 255, 255, 0.7);
+    --logo-height-size-small-screens: 80px;
+    --logo-width-size-small-screens: 60px;
+    --powder-blue-glow: rgb(60, 180, 255);
+    --powder-blue-nonGlow: rgb(0, 119, 192);
+
+    --font-sizeL: 44px;
+    --font-sizeM: 24px;
+    --font-size-S: 18px;
+    --font-color: black;
+    --font-color-alt: rgba(0, 0, 0, 0.7);
+}
+
+.special-glass {
+    background: rgba(20, 25, 20, 0.8);
+    display: none;
+    animation: fadeIn .5s ease-in-out;
+    flex-direction: column;
+    color: var(--secondary-color);
+    gap: 10px;
+}
+
+.footer-btn {
+    padding: 50px;
+    font-size: var(--font-sizeM);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#footer-section {
+    background: linear-gradient(45deg, black, gray 10%, gray, black);
+}
+
+.footer-btn:hover {
+    color: var(--powder-blue-glow);
+    transform: scale(1.1);
+    font-weight: bold;
+    border-bottom: 1px solid #EEE1C6;
+}
+
+#footer-section-shop-hours {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    border-radius: 10px;
+    height: max-content;
+    z-index: 2;
+    text-decoration: none;
+    width: max-content;
+    list-style: none;
+    font-size: var(--font-sizeM);
+    padding: 10px;
+}
+
+#footer-section-gees-contact {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    width: max-content;
+    list-style: none;
+    font-size: large;
+    padding: 10px;
+}
+
+#footer-section {
+    height: 175px;
+    display: flex;
+    align-items: center;
+}
+
+#footer-section-gees-contact-email-link {
+    outline: none;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#footerContainer {
+    display: grid;
+    /* height: 30vh; */
+    color: black;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+#footerContainer div {
+    cursor: pointer;
+}
+
+#footer-section-gees-contact-links-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-section-popup-menu {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.svgBtn {
+    height: 20px;
+    width: 20px;
+    box-shadow: 3px 3px 10px black;
+    cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    .footer-section-popup-menu {
+        height: 128px;
+    }
+
+    .footer-btn {
+        padding: 5px;
+        font-size: --font-sizeL;
+    }
+}

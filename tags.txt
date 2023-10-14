@@ -1,0 +1,33 @@
+["barbers","real-men-real-talk","medical-clinic","service","event","time","staff"]
+ <div id="reviewTags_container">
+                        <label for="tag_barbers">Barbers</label>
+                        <input type="checkbox" id="barber_tag" name="tag_barbers" value="barbers">
+
+                        <label for="tag_real-men-real-talk">Real men Real Talk</label>
+                        <input type="checkbox" id="rmrt_tag" name="tag_real-men-real-talk" value="real-men-real-talk">
+
+                        <label for="tag_medical-clinic">Medical Clinic</label>
+                        <input type="checkbox" id="medical-clinic_tag" name="tag_medical-clinic" value="medical-clinic">
+
+                        <label for="tag_service">Service</label>
+                        <input type="checkbox" id="service_tag" name="tag_service" value="service">
+
+                        <label for="tag_event">Event</label>
+                        <input type="checkbox" id="event_tag" name="tag_event" value="event">
+
+                        <label for="tag_time">Time</label>
+                        <input type="checkbox" id="time_tag" name="tag_time" value="time">
+
+                        <label for="tag_staff">Staff</label>
+                        <input type="checkbox" id="staff_tag" name="tag_staff" value="staff">
+                    </div>
+
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Name" id="reviewName">
+
+                    <label for="description">Description</label>
+                    <textarea name="description" id="reviewDescriptionInput" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>

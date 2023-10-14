@@ -1,0 +1,342 @@
+:root {
+    --main-color: #0077C0;
+    --secondary-color: #EEE1C6;
+    --powder-blue-glow: rgb(60, 180, 255);
+    --powder-blue-nonGlow: rgb(0, 119, 192);
+    --alt-color: rgb(0, 71, 27);
+    --glass-color: rgba(255, 255, 255, 0.7);
+    --font-sizeL: 44px;
+    --font-size-title: 32px;
+    --font-sizeM: 24px;
+    --font-size-S: 18px;
+    --font-color: black;
+    --font-color-alt: rgba(0, 0, 0, 0.7);
+
+    --my-start-height: 0px;
+    --my-end-height: 0px;
+}
+
+.flex,
+.flex-edit-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-edit-menu {
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+
+}
+
+.item-b {
+    flex-grow: 1;
+    width: 100%;
+}
+
+#adminPanelBody {
+    background-color: var(--secondary-color);
+    height: 100%;
+}
+
+#rating_star {
+    height: 20px;
+    aspect-ratio: 1/1;
+    filter: invert(1) brightness(80%) sepia(100%) saturate(365%);
+}
+
+.reviewCard {
+    flex-grow: 1;
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: var(--font-size-S);
+}
+
+.reviewCard>* {
+    margin-bottom: 5px;
+    padding: 0 5px;
+}
+
+.reviewRating {
+    height: 20px;
+    aspect-ratio: 1/1;
+    filter: invert(1) brightness(80%) sepia(100%) saturate(365%);
+}
+
+.reviewRatingNotChosen {
+    height: 20px;
+    aspect-ratio: 1/1;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-sizeM);
+    gap: 5px;
+    padding-bottom: 20px;
+}
+
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: var(--main-color);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* background: var(--secondary-color); */
+    background: url("../images/icons/GeesClippersLogo.png");
+    background-size: cover;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* background: var(--secondary-color); */
+    background: url("../images/icons/GeesClippersLogo.png");
+    background-size: cover;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+#reviewsDisplaySection {
+    width: 80%;
+}
+
+hr {
+    width: 80%;
+    background: black;
+}
+
+#reviews_display_container {
+    display: none;
+}
+
+#reviewsDisplay {
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
+.editIcon {
+    aspect-ratio: 1/1;
+    height: 30px;
+}
+
+.editIconContainer {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background: none;
+    border: none;
+    filter: invert(1);
+}
+
+
+.editIcon:hover {
+    filter: invert(0.5) brightness(42%) sepia(100%) saturate(405%) hue-rotate(300deg);
+    cursor: pointer;
+    /* filter: brightness(80%) sepia(100%) saturate(365%); */
+}
+
+.menu {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 5px;
+    flex-grow: 1;
+    box-sizing: content-box;
+}
+
+.closeMenuBtn {
+    cursor: pointer;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+.closeMenuBtn img {
+    aspect-ratio: 1/1;
+    height: 30px;
+
+}
+
+.closeMenuBtn img:hover {
+    filter: invert(1) brightness(42%) sepia(100%) saturate(405%) hue-rotate(300deg);
+}
+
+.flex-menu {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+}
+
+.btn-delete,
+.btn,
+#index-create-events-listing-submitBTN {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: var(--font-sizeM);
+    box-shadow: 3px 5px 5px black;
+    background-color: var(--font-color-alt);
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+.btn-delete {
+    padding: 5px;
+    font-size: var(--font-size-S);
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+}
+
+.btn-delete:hover {
+    background-color: red;
+}
+
+#index-create-events-listing-submitBTN:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+#admin-panel-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#eventUpload,
+#barberUpload {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-barberPanel,
+.glass-eventPanel {
+    background: linear-gradient(to bottom, var(--powder-blue-nonGlow), var(--main-color));
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+#index-create-events-listing-description {
+    resize: none;
+    width: 90%;
+    height: 100px;
+}
+
+#imageUpload {
+    font-size: var(--font-size-S);
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#index-create-events-listing-title {
+    height: 40px;
+    width: 90%;
+}
+
+.title {
+    font-size: var(--font-size-title);
+}
+
+.event-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: var(--font-sizeM);
+    background: rgba(0, 119, 192, 1);
+}
+
+#accountsDisplay,
+#eventsDisplay {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#events_display_container {
+    display: none;
+}
+
+.eventImg {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    width: 30%;
+}
+
+#accountsDisplaySection {
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+    .title {
+        font-size: var(--font-sizeM);
+    }
+}

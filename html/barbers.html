@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gees Clippers Barber Page</title>
+  <link rel="stylesheet" href="../css/barbers.css" />
+  <link rel="stylesheet" href="../css/navigationMenu.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!-- nav menu -->
+  <section id="nav-menu-section">
+    <div id="navContainer" class="grid-container">
+      <img id="index-nav-menu-home-btn" class="navBTN" src="../images/icons/GeesClippersLogo.png" alt="Home Button"
+        tabindex="1" />
+
+      <div id="nav-menu-section-inner-container">
+        <div id="loggedInACC"></div>
+        <a href="/barbers" id="nav-aboutUs-btn" class="navBTN" tabindex="1">Barbers</a>
+        <a href="/partners" id="nav-community-btn" tabindex="1" class="navBTN">Community</a>
+        <a href="#footer-section" id="nav-contactUs-btn" tabindex="1" class="navBTN">Contact Us</a>
+        <a href="/reviews" id="nav-fans-btn" class="navBTN" tabindex="1">Fans</a>
+        <a href="/medical-clinic" id="nav-medicalClinic-btn" tabindex="1" class="navBTN">Medical Clinic</a>
+        <a href="/services" id="nav-services-btn" class="navBTN" tabindex="1">Services</a>
+
+
+        <form action="" method="get" id="nav-menu-userLogin-form">
+          <label for="nav-menu-username">Username:</label>
+          <input id="nav-menu-username" type="text" />
+          <label for="nav-menu-password">Password:</label>
+          <input id="nav-menu-password" type="password" />
+          <button type="submit" id="nav-menu-login-btn">Login</button>
+          <button type="button" id="nav-menu-signup-btn">Sign up</button>
+        </form>
+      </div>
+
+      <div class="mobile-menu-button">
+        <a href="javascript:void(0);" class="icon" id="nav-section-mobile-menu-button">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <div id="loggedInACC"></div>
+  </section>
+
+  <section id="barbers-main-content-bookAnAppointment-section">
+    <div id="barbers-main-content-container">
+      <h1 id="barbers-main-content-header">Meet Gee's Players</h1>
+      <h2 id="barberRosterTitle">Barber Roster</h2>
+      <h3 id="actionStatementTitle">Click on the different barber cards below for more information!</h3>
+      <div id="barbers-main-content-inner-container"></div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div id="modal-content" class="modal-content">
+        <span class="close">&times;</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer-section">
+    <div id="footerContainer">
+      <div class="footer-btn" id="footer-hours-btn">Hours</div>
+      <div class="footer-btn" id="footer-careers-btn">Careers</div>
+      <div class="footer-btn" id="footer-contact-btn">Contact</div>
+    </div>
+
+    <div class="footer-section-popup-menu">
+      <ul id="footer-section-shop-hours" class="special-glass">
+        <li>Sunday - Monday: Closed</li>
+        <li>Tuesday - Friday: 8:00 AM - 6:00 PM</li>
+        <li>Saturday: 6:00 AM - 4:00 PM</li>
+      </ul>
+
+      <ul id="footer-section-gees-contact" class="special-glass">
+        <li>2200 N Dr. Martin Luther King Jr. Drive</li>
+        <li>Miwaukee, WI</li>
+        <li>
+          <a id="footer-section-gees-contact-email-link" href="mailto:gauliensmith@yahoo.com">gauliensmith@yahoo.com</a>
+        </li>
+        <li>414-763-8832</li>
+        <div id="footer-section-gees-contact-links-container">
+          <img id="footer-section-gees-contact-linkedin" class="svgBtn" src="../images/icons/linkedin-svgrepo-com.svg"
+            alt="Linkedin link" />
+          <img id="footer-section-gees-contact-facebook" class="svgBtn"
+            src="../images/icons/facebook-color-svgrepo-com.svg" alt="Facebook link" />
+          <img id="footer-section-gees-contact-instagram" class="svgBtn" src="../images/icons/instagram-svgrepo-com.svg"
+            alt="Instagram link" />
+        </div>
+      </ul>
+    </div>
+  </section>
+  <script type="module" src="../app/NavigationMenu.js"></script>
+  <script type="module" src="../app/Footer.js"></script>
+  <script type="module" src="../app/barber.js"></script>
+</body>
+
+</html>
+<!-- NOTES -->
+<!-- <script type="module" src="../app/index.js"></script> -->
+<!-- npm run build to start server -->
